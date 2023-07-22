@@ -7,10 +7,21 @@
     <title>The Legal Practice</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    backgroundImage: {
+                        'hero-pattern': "url('./images/banner.png')",
+                    },
+                },
+            },
+        }
+    </script>
 </head>
 
 <body>
-    <header>
+    <header class="mx-24">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -51,21 +62,96 @@
                 </div>
             </div>
         </nav>
-        <div class="hero min-h-screen" style="background-image: url('images/banner.png');">
+        <div class="hero min-h-[calc(100vh-68px)] bg-hero-pattern">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center">
                 <div class="max-w-md space-y-5">
-                    <h1 class="mb-5 text-4xl font-extrabold text-white">We Provide Effective  <br> Legal Solutions</h1>
-                    <p class="mb-5 text-white">There are many variations of passages of Lorem Ipsum available, but the majority
+                    <h1 class="mb-5 text-4xl font-extrabold text-white">We Provide Effective <br> Legal Solutions</h1>
+                    <p class="mb-5 text-white">There are many variations of passages of Lorem Ipsum available, but the
+                        majority
                         have suffered alteration in some form, by injected humour.</p>
                     <div>
-                        <input type="text" placeholder="Search your services" class="input input-bordered input-primary w-full max-w-xs" />
+                        <input type="text" placeholder="Search your services"
+                            class="input input-bordered input-primary w-full max-w-xs" />
                         <button class="btn btn-primary">Search</button>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+    <main class="mx-24">
+        <section >
+            <div class="mt-10">
+                <h1 class="text-3xl font-extrabold text-center">The Legal Practice Area</h1>
+                <p class="text-center">There are many variations of passages of Lorem Ipsum available, but the majority have <br>
+                    suffered alteration in some form, by injected humour.</p>
+            </div>
+            <div class="grid grid-cols-3 gap-5 justify-center items-center mt-10">
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/business.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Business Law</h2>
+                      <p>There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br>  suffered alteration in some <br>  form, by injected humour.</p>
+                      <img src="images/Frame.png" alt="">
+                    </div>
+                  </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/criminal.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Criminal Law</h2>
+                      <p>There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br>  suffered alteration in some <br>  form, by injected humour.</p>
+                      <img src="images/Frame.png" alt="">
+                    </div>
+                  </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/child.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Child Support</h2>
+                      <p>There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br>  suffered alteration in some <br>  form, by injected humour.</p>
+                      <img src="images/Frame.png" alt="">
+                    </div>
+                  </div>
+
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/education.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Education Law</h2>
+                      <p>There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br>  suffered alteration in some <br>  form, by injected humour.</p>
+                      <img src="images/Frame.png" alt="">
+                    </div>
+                  </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/divorce.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Divorce Law</h2>
+                      <p>There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br>  suffered alteration in some <br>  form, by injected humour.</p>
+                      <img src="images/Frame.png" alt="">
+                    </div>
+                  </div>
+                <div class="card bg-base-100 shadow-xl">
+                    <figure class="px-10 pt-10">
+                      <img src="/images/tax.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Tax Law</h2>
+                      <p>There are many variations of <br> passages of Lorem Ipsum <br> available, but the majority have <br>  suffered alteration in some <br>  form, by injected humour.</p>
+                      <img src="images/Frame.png" alt="">
+                    </div>
+                  </div>
+            </div>
+        </section>
+    </main>
+    <!-- script -->
 </body>
 
 </html>
