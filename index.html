@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -7,6 +7,7 @@
     <title>The Legal Practice</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.3.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/2e005f8521.js" crossorigin="anonymous"></script>
     <script>
         tailwind.config = {
             theme: {
@@ -14,6 +15,10 @@
                     backgroundImage: {
                         'hero-pattern': "url('./images/banner.png')",
                     },
+                    colors: {
+                        clifford: '#da373d',
+                        'btn-primary': '#B68C5A',
+                    }
                 },
             },
         }
@@ -35,45 +40,41 @@
                         </label>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-                            <li><a>Item 1</a></li>
-                            <li>
-                                <a>Parent</a>
-                                <ul class="p-2">
-                                    <li><a>Submenu 1</a></li>
-                                    <li><a>Submenu 2</a></li>
-                                </ul>
-                            </li>
-                            <li><a>Item 3</a></li>
+                            <li><a>Home</a></li>
+                            <li><a>Services <i class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a>Cases <i class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a>Blog <i class="fa-solid fa-angle-right"></i></a></li>
+                            <li><a>Contact Us <i class="fa-solid fa-angle-right"></i></a></li>
                         </ul>
                     </div>
                     <img src="images/logo2.png" alt="">
                 </div>
-                <div class="navbar-center hidden lg:flex">
-                    <ul class="menu menu-horizontal px-1">
+                <div class="navbar-center hidden lg:flex justify-center items-center">
+                    <ul class="menu menu-horizontal px-1 text-base font-medium">
                         <li><a>Home</a></li>
-                        <li><a>Services</a></li>
-                        <li><a>Cases</a></li>
-                        <li><a>Blog</a></li>
-                        <li><a>Contact Us</a></li>
+                        <li><a>Services <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a>Cases <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a>Blog <i class="fa-solid fa-angle-right"></i></a></li>
+                        <li><a>Contact Us <i class="fa-solid fa-angle-right"></i></a></li>
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn">Free Consultation</a>
+                    <a class="btn bg-btn-primary text-white">Free Consultation</a>
                 </div>
             </div>
         </nav>
         <div class="hero min-h-[calc(100vh-108px)] bg-hero-pattern ">
             <div class="hero-overlay bg-opacity-60"></div>
             <div class="hero-content text-center">
-                <div class="max-w-md space-y-5">
-                    <h1 class="mb-5 text-4xl font-extrabold text-white">We Provide Effective <br> Legal Solutions</h1>
+                <div class="max-w-md lg:space-y-5">
+                    <h1 class="mb-5 md:text-2xl lg:text-4xl font-extrabold text-white">We Provide Effective <br> Legal Solutions</h1>
                     <p class="mb-5 text-white">There are many variations of passages of Lorem Ipsum available, but the
                         majority
                         have suffered alteration in some form, by injected humour.</p>
                     <div>
                         <input type="text" placeholder="Search your services"
-                            class="input input-bordered input-primary w-full max-w-xs" />
-                        <button class="btn btn-primary">Search</button>
+                            class="input input-bordered input-primary w-full max-w-xs " />
+                        <button class="btn  bg-btn-primary">Search</button>
                     </div>
                 </div>
             </div>
@@ -87,10 +88,10 @@
                     have <br>
                     suffered alteration in some form, by injected humour.</p>
             </div>
-            <div class="grid grid-cols-3 gap-5 justify-center items-center mt-10">
-                <div class="card bg-base-100 shadow-xl">
+            <div class="grid lg:grid-cols-3  justify-center items-center mt-10">
+                <div class="border-b-2">
                     <figure class="px-10 pt-10">
-                        <img src="images/business.png" alt="Shoes" class="rounded-xl" />
+                        <img src="images/business.png" alt="Shoes" class="m-auto" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Business Law</h2>
@@ -99,9 +100,9 @@
                         <img src="images/Frame.png" alt="">
                     </div>
                 </div>
-                <div class="card bg-base-100 shadow-xl">
+                <div class=" bg-gradient-to-r from-[#F3F3F3] to-[ #F3F3F3] border-2">
                     <figure class="px-10 pt-10">
-                        <img src="images/criminal.png" alt="Shoes" class="rounded-xl" />
+                        <img src="images/criminal.png" alt="Shoes" class="m-auto" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Criminal Law</h2>
@@ -110,9 +111,9 @@
                         <img src="images/Frame.png" alt="">
                     </div>
                 </div>
-                <div class="card bg-base-100 shadow-xl">
+                <div class=" bg-base-100 border-b-2">
                     <figure class="px-10 pt-10">
-                        <img src="images/child.png" alt="Shoes" class="rounded-xl" />
+                        <img src="images/child.png" alt="Shoes" class="m-auto" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Child Support</h2>
@@ -122,9 +123,9 @@
                     </div>
                 </div>
 
-                <div class="card bg-base-100 shadow-xl">
+                <div class=" bg-base-100 border-r-2">
                     <figure class="px-10 pt-10">
-                        <img src="images/education.png" alt="Shoes" class="rounded-xl" />
+                        <img src="images/education.png" alt="Shoes" class="m-auto" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Education Law</h2>
@@ -133,9 +134,9 @@
                         <img src="images/Frame.png" alt="">
                     </div>
                 </div>
-                <div class="card bg-base-100 shadow-xl">
+                <div class=" bg-base-100 ">
                     <figure class="px-10 pt-10">
-                        <img src="images/divorce.png" alt="Shoes" class="rounded-xl" />
+                        <img src="images/divorce.png" alt="Shoes" class="m-auto" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Divorce Law</h2>
@@ -144,9 +145,9 @@
                         <img src="images/Frame.png" alt="">
                     </div>
                 </div>
-                <div class="card bg-base-100 shadow-xl">
+                <div class=" bg-base-100 border-l-2">
                     <figure class="px-10 pt-10">
-                        <img src="images/tax.png" alt="Shoes" class="rounded-xl" />
+                        <img src="images/tax.png" alt="Shoes" class="m-auto" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 class="card-title">Tax Law</h2>
@@ -178,9 +179,11 @@
                                         </div>
                                         <h1 class="text-5xl font-bold">Awlad Hossain</h1>
                                         <h4 class="text-2xl font-semibold">UIX Designe</h4>
-                                        <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut
-                                            assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-                                            et a id nisi.</p>
+                                        <p class="py-7 m-auto">Contrary to popular belief, Lorem Ipsum is not simply
+                                            random text. It has roots in a piece of classical Latin literature from 45
+                                            BC, making it over 2000 years old. Richard McClintock, a Latin professor at
+                                            Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
+                                            words, consectetur.</p>
                                     </div>
                                 </div>
                             </div>
@@ -250,7 +253,7 @@
                     majority have <br>
                     suffered alteration in some form, by injected humour.</p>
             </div>
-            <div class="flex justify-around items-center gap-7">
+            <div class="flex flex-col lg:flex-row justify-around items-center gap-7">
                 <div class="space-y-7">
                     <div class="collapse collapse-plus bg-base-200">
                         <input type="radio" name="my-accordion-3" checked="checked" />
@@ -295,11 +298,11 @@
                     majority have <br> suffered alteration in some form, by injected humour.</p>
 
             </div>
-            <div class=" flex justify-around items-center gap-5">
-                <div class="grid grid-cols-2 gap-3">
-                    <div class="card w-[285px] h-[285px] bg-base-100 border">
-                        <figure class="px-10 pt-10">
-                            <img src="images/location.png" alt="Shoes"  />
+            <div class=" flex flex-col md:flex-row lg:flex-row justify-around items-center gap-5">
+                <div class="grid grid-rows-1 lg:grid-cols-2">
+                    <div class=" w-[285px] h-[285px] bg-gray-100 border border-gray-600">
+                        <figure class="px-10 pt-10 flex justify-center">
+                            <img src="images/location.png" alt="Shoes" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Address</h2>
@@ -307,9 +310,9 @@
                                 New York, NY 535022</p>
                         </div>
                     </div>
-                    <div class="card w-[285px] h-[285px] bg-base-100 border">
-                        <figure class="px-10 pt-10">
-                            <img src="images/call.png" alt="Shoes"  />
+                    <div class=" w-[285px] h-[285px] bg-gray-100 border border-gray-600">
+                        <figure class="px-10 pt-10 flex justify-center">
+                            <img src="images/call.png" alt="Shoes" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Call Us</h2>
@@ -317,9 +320,9 @@
                                 +88 01750 00 00 00</p>
                         </div>
                     </div>
-                    <div class="card w-[285px] h-[285px] bg-base-100 border">
-                        <figure class="px-10 pt-10">
-                            <img src="images/email.png" alt="Shoes"  />
+                    <div class=" w-[285px] h-[285px] bg-gray-100 border border-gray-600">
+                        <figure class="px-10 pt-10 flex justify-center">
+                            <img src="images/email.png" alt="Shoes" />
                         </figure>
                         <div class="card-body items-center text-center">
                             <h2 class="card-title">Email Us</h2>
@@ -327,8 +330,8 @@
                                 info@gmail.com</p>
                         </div>
                     </div>
-                    <div class="card w-[285px] h-[285px] bg-base-100 border">
-                        <figure class="px-10 pt-10">
+                    <div class=" w-[285px] h-[285px] bg-gray-100 border border-gray-600">
+                        <figure class="px-10 pt-10 flex justify-center">
                             <img src="images/time.png" alt="Shoes" />
                         </figure>
                         <div class="card-body items-center text-center">
@@ -339,11 +342,17 @@
                     </div>
                 </div>
                 <div class="grid grid-cols-1 gap-7">
-                    <input type="text" placeholder="Your Name" class="input input-bordered input-accent  w-[570px] h-[72px]  " />
-                    <input type="text" placeholder="Your Email" class="input input-bordered input-accent  w-[570px] h-[72px] " />
-                    <input type="text" placeholder="Subject" class="input input-bordered input-accent  w-[570px] h-[72px] " />
-                    <input type="text" placeholder="Your Message" class="input input-bordered input-accent  w-[570px] h-[162px] " />
-                    <button class="btn btn-info w-[570px] h-[72px] text-white text-xl font-bold">Send Message</button>
+                    <input type="text" placeholder="Your Name"
+                        class="input input-bordered input-accent  lg:w-[570px] lg:h-[72px]  " />
+                    <input type="text" placeholder="Your Email"
+                        class="input input-bordered input-accent  lg:w-[570px] lg:h-[72px] " />
+                    <input type="text" placeholder="Subject"
+                        class="input input-bordered input-accent  lg:w-[570px] lg:h-[72px] " />
+                    <input type="text" placeholder="Your Message"
+                        class="input input-bordered input-accent  lg:w-[570px] lg:h-[162px] " />
+                    <button
+                        class="btn btn-info lg:w-[570px] lg:h-[72px] text-white text-xl font-bold bg-btn-primary">Send
+                        Message</button>
                 </div>
             </div>
         </section>
@@ -376,7 +385,7 @@
             <div class="form-control w-80">
                 <div class="relative">
                     <input type="text" placeholder="Email Address" class="input input-bordered w-full pr-16" />
-                    <button class="btn btn-primary absolute top-0 right-0 rounded-l-none">
+                    <button class="btn bg-btn-primary absolute top-0 right-0 rounded-l-none text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="w-6 h-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
